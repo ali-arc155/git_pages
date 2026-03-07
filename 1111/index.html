@@ -18,42 +18,58 @@
             background: white;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
         }
-        .p1{
+        .text-content {
+            flex: 1;
+        }
+        .p1 {
+            font-size: 26px;
             margin: 0px;
             color: #000000;
         }
-        .p2{
+        .p2 {
+            font-size: 26px;
             margin: 0px;
             margin-top: 20px;
             color: #001eff;
         }
-        
+        .image-container {
+            flex-shrink: 0;
+        }
+        .moving-bin-image {
+            width: auto;
+            height: 500px;
+        }
     </style>
 </head>
 <body>
-    
-    <div style="text-indent: 50px; color: #001eff; font-size: 26px; width: 990px;" class="container">
-        <p class="p1" style="color: #001eff;">People are too lazy to go to the bin. And they throw from a long distance, and</p> <p class="p1" style="color: #001eff;"> trash seldom ends up in the trash.</p>
+    <div class="container">
+        <!-- Картинка слева -->
+        <div class="image-container">
+            <img src="https://ali-arc155.github.io/git_pages/1111/buy/tovar2.png" alt="Moving bin illustration" class="moving-bin-image">
+        </div>
 
-        <p class="p2">What it does</p>
-        <p class="p1">It catches trash when you throw it. For example, you have a can from Coca‑Cola,</p><p class="p1">you throw it — the bin automatically catches it.</p>
+        <!-- Текст справа -->
+        <div class="text-content">
+            <p class="p1" style="color: #001eff;">People are too lazy to go to the bin. And they throw from a long distance, and</p>
+            <p class="p1" style="color: #001eff;">trash seldom ends up in the trash.</p>
 
-        <p class="p2">How it works</p>
-        <p class="p1">It looks for trash in the air using machine vision and plans where the trash will</p><p class="p1">stop with AI. After that, it goes to the position where the trash will land.</p>
+            <p class="p2">What it does</p>
+            <p class="p1">It catches trash when you throw it. For example, you have a can from Coca‑Cola,</p>
+            <p class="p1">you throw it — the bin automatically catches it.</p>
 
-        <p class="p2">Why use a moving bin</p>
-        <p class="p1">It helps you to throw out trash without going to the bin and keeps your room tidy.</p>
+            <p class="p2">How it works</p>
+            <p class="p1">It looks for trash in the air using machine vision and plans where the trash will</p>
+            <p class="p1">stop with AI. After that, it goes to the position where the trash will land.</p>
 
+            <p class="p2">Why use a moving bin</p>
+            <p class="p1">It helps you to throw out trash without going to the bin and keeps your room tidy.</p>
 
-        
-        <button onclick="window.location.href = window.location.href = window.location.href + '/buy'" style="display: block; margin: 0 auto; background-color: #007bff; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 50px; cursor: pointer; margin-top: 20px;">BYU NOW</button>
-
-            
+            <button onclick="window.location.href = window.location.href + '/buy'" style="display: block; margin: 0 auto; background-color: #007bff; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 50px; cursor: pointer; margin-top: 20px;">BUY NOW</button>
+        </div>
     </div>
 </body>
 </html>
-
-
-
-
